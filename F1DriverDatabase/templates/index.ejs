@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>F1 Driver Information</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="f_logo_icon_248908.ico">
+    <style>
+        :root {
+            --font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            --my-size: 1rem;
+        }
+
+        html {
+            font-family: var(--font-family);
+            font-size: var(--my-size);
+        }
+
+        body {
+            width: 73rem;
+            border: .75rem groove black;
+            outline-offset: .5rem;
+            margin: 2rem;
+            background-color: grey;
+        }
+
+        div {
+            background-color: lightgray;
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/33/F1.svg);
+            padding: 2rem;
+            background-size: 50% 50%; 
+            background-repeat: no-repeat; 
+            background-position: calc(100% - 2rem) center;
+        }
+
+        table, td, th {
+            border: .1rem solid black;
+        }
+
+        tr:nth-child(2n) {background-color: gray}
+        tr:nth-child(2n + 1) {background-color: silver}
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>F1 Driver Data Bank</h1>
+
+        <h2>Drivers List</h2>
+        <ul>
+            <li>Driver List (Since 2010) <a href="/drivers">Driver List</a></li>
+            <li>Select by Nationailty <a href="/nationality">Select by Nationality</a></li>
+            <li>Search Drivers <a href="/driverSearch">Search Driver</a><br></li>
+        </ul>
+
+        <h2>Add Driver Information</h2>
+        <ul>
+            <li>Add New Driver <a href="/newDriver">Here</a><br></li>
+        </ul>
+        
+        <hr>
+
+        <ul>
+            <li>Remove All Created Drivers <a href="/driverRemove">Here</a></li>
+        </ul>
+        </div>
+</body>

@@ -1,0 +1,52 @@
+:root {
+    --font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --my-size: 1rem;
+}
+
+html {
+    font-family: var(--font-family);
+    font-size: var(--my-size);
+ }
+
+body {
+    width: 73rem;
+    border: .75rem groove black;
+    outline-offset: .5rem;
+    margin: 2rem;
+    background-color: grey;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/33/F1.svg);
+}
+
+div {
+    background-color: lightgray;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/33/F1.svg);
+    padding: 2rem;
+    background-size: 50% 50%; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+table, td, th {
+    border: .1rem solid black;
+}
+
+#p1::first-letter {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+#p1 {
+    color: black;
+}
+
+#top {
+    background-color: gray;
+    color: black;
+}
+
+.image1 {
+    height: 15rem; 
+}
+
+tr:nth-child(2n) {background-color: gray}
+tr:nth-child(2n + 1) {background-color: silver}

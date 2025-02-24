@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Remove Drivers</title>
+    <style>
+        :root {
+            --font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            --my-size: 1rem;
+        }
+
+        html {
+            font-family: var(--font-family);
+            font-size: var(--my-size);
+        }
+
+        body {
+            width: 73rem;
+            border: .75rem groove black;
+            outline-offset: .5rem;
+            margin: 2rem;
+            background-color: grey;
+        }
+
+        div {
+            background-color: lightgray;
+            padding: 2rem;
+            background-size: 50% 50%; 
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Removing All Created Drivers</h1>
+        <form action="http://localhost:<%- portNumber %>/processDriverRemove" method="post">
+            <input type="submit" value="Remove all Created Drivers" onclick = "submitRemove()"/>
+        </form>
+    
+        <hr>
+        <a href = "/">HOME</a>
+    </div>
+</body>
+<script>
+	function submitRemove() {
+		return confirm("Are you sure you want to remove all created drivers?")
+	}
+</script>
+</html>

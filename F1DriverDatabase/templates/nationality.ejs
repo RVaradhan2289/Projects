@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Nationality</title>
+    <style>
+        :root {
+            --font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            --my-size: 1rem;
+        }
+
+        html {
+            font-family: var(--font-family);
+            font-size: var(--my-size);
+        }
+
+        body {
+            width: 73rem;
+            border: .75rem groove black;
+            outline-offset: .5rem;
+            margin: 2rem;
+            background-color: grey;
+        }
+
+        div {
+            background-color: lightgray;
+            padding: 2rem;
+            background-size: 50% 50%; 
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Display drivers of specified nationality</h1>
+        <form action="http://localhost:<%- portNumber %>/processNationality" method="post">
+            <label>Enter a nationality: <input type="text" name="nationality"></label>
+
+            <br>
+            <input type="submit" value="Search Drivers"/>
+        </form>
+
+        <hr>
+        <a href = "/">HOME</a>
+    </div>
+</body>
+
+</html>

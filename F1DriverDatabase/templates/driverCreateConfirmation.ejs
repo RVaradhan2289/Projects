@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Driver Confirmation</title>
+    <style>
+        :root {
+            --font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            --my-size: 1rem;
+        }
+
+        html {
+            font-family: var(--font-family);
+            font-size: var(--my-size);
+        }
+
+        body {
+            width: 73rem;
+            border: .75rem groove black;
+            outline-offset: .5rem;
+            margin: 2rem;
+            background-color: grey;
+        }
+
+        div {
+            background-color: lightgray;
+            padding: 2rem;
+            background-size: 50% 50%; 
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+	    <h1>Driver Data</h1>
+        <fieldset>
+            <strong>First Name: </strong><%- givenName %><br>
+            <strong>Last Name: </strong><%- familyName %><br>
+            <strong>Nationality: </strong><%- nationality %><br>
+            <strong>DOB: </strong><%- dateOfBirth %><br>
+            <strong>Driver ID: </strong><%- driverId %><br>
+            <strong>Driver Number: </strong><%- permanentNumber %><br>
+            <strong>Background Information: </strong><%- backInfo %><br>
+        </fieldset>
+		<hr>
+        <a href = "/">HOME</a>
+	</div>
+</body>
+
+</html>
