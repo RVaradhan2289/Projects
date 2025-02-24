@@ -1,1 +1,1 @@
-Repository containing various personal and school projects I have done. 
+Repository containing various personal and school projects I have created. 
